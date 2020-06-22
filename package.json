@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Yuddomack/ci-cd-process/issues"
   },
-  "homepage": "https://github.com/Yuddomack/ci-cd-process#readme"
+  "homepage": "https://github.com/Yuddomack/ci-cd-process#readme",
+  "devDependencies": {
+    "husky": "^4.2.5"
+  }
 }
