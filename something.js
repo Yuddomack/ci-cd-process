@@ -1,2 +1,3 @@
-var a = 10;
-console.log(a);
+exports.sum = function (a, b) {
+  return a + b;
+};

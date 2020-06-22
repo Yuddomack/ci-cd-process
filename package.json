@@ -4,12 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "lint": "./node_modules/.bin/eslint './**/*.js'"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run test"
     }
   },
   "repository": {
@@ -24,6 +40,7 @@
   "homepage": "https://github.com/Yuddomack/ci-cd-process#readme",
   "devDependencies": {
     "eslint": "^7.3.0",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "jest": "^26.0.1"
   }
 }
