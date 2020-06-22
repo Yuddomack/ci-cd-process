@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Yuddomack/ci-cd-process#readme",
   "devDependencies": {
+    "eslint": "^7.3.0",
     "husky": "^4.2.5"
   }
 }
