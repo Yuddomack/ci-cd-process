@@ -23,11 +23,6 @@
       }
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yuddomack/ci-cd-process.git"
