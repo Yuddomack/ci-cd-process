@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "echo build complete",
     "test": "jest --coverage",
     "lint": "eslint './**/*.js'"
   },
